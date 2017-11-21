@@ -1,0 +1,145 @@
+:root{
+    --main-color: #00e871;
+}
+.container-fluid{
+    padding: 0;
+}
+
+#line,#line_page > .text-center{
+    /*margin-bottom: 50px;*/
+    background-color: black
+}
+
+#line > .text-center .btn{
+    margin: 11px;
+    padding: 5px 10px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+#line .fa-chevron-down{
+    /*font-size: 20px;*/
+}
+#line .text-center .btn:hover{
+    background-color: var(--second-color);;
+}
+
+#line_page .text-center a{
+    cursor: pointer;
+}
+#line_page .glyphicon-chevron-left,
+#line_page .glyphicon-chevron-right{
+    padding: 17px 20px;
+    font-size: 20px ;
+    color: var(--main-color);
+}
+#line_page .glyphicon-chevron-left:hover,
+#line_page .glyphicon-chevron-right:hover{
+    color: var(--second-color);
+}
+#line_page span{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+@media only screen and (max-width : 479px){
+    #line .text-center{
+        margin-bottom: 0px;
+    }
+    #line > .text-center .btn{
+        margin: 4px;
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+    #line_page .glyphicon-chevron-left,
+    #line_page .glyphicon-chevron-right{
+        padding: 8px 10px;
+        font-size: 14px ;
+    }
+    #line_page span{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width : 480px) and (max-width : 594px){
+    #line > .text-center{
+        margin-bottom: 0px;
+    }
+    #line > .text-center .btn{
+        margin: 7px;
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    #line .fa-chevron-down{
+        font-size: 14px;
+    }
+    #line_page .glyphicon-chevron-left,
+    #line_page .glyphicon-chevron-right{
+        padding: 12px 15px;
+        font-size: 16px ;
+    }
+    #line_page span{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width : 595px) and (max-width : 689px){
+    #line > .text-center{
+        margin-bottom: 0px;
+    }
+    #line > .text-center .btn{
+        margin: 8px;
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+    #line .fa-chevron-down{
+        font-size: 14px;
+    }
+    #line_page .glyphicon-chevron-left,
+    #line_page .glyphicon-chevron-right{
+        padding: 14px 17px;
+        font-size: 16px ;
+    }
+    #line_page span{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width : 690px) and (max-width : 799px){
+    #line > .text-center{
+        margin-bottom: 0px;
+    }
+    #line > .text-center .btn{
+        margin: 8px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    #line .fa-chevron-down{
+        font-size: 15px;
+    }
+    #line_page .glyphicon-chevron-left,
+    #line_page .glyphicon-chevron-right{
+        padding: 15px 18px;
+        font-size: 18px ;
+    }
+    #line_page span{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1023px){
+    #line > .text-center{
+        margin-bottom: 0px;
+    }
+    #line > .text-center .btn{
+        margin: 9px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px){  }
+
+
+
+

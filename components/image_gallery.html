@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <script src="../js/library/jssor.slider-26.3.0.min.js"></script>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/library/jquery.touchSwipe.js"></script>
+    <style>
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+        #myCarousel .carousel-inner{
+            height: 100%;
+        }
+        #myCarousel .item{
+            height: 100%;
+            margin: 0;
+            /*padding:0px 20px !important;*/
+        }
+        #myCarousel .thumbnail{
+            float: left;
+            width: 32%;
+            margin: 0;
+            margin-right: 2%;
+            padding: 7px;
+            border-radius: 0px;
+        }
+        #myCarousel .item a:nth-last-child(1)  > .thumbnail{
+            margin-right: 0%;
+            /*display: none;*/
+        }
+        .btn-control.left{
+            position: absolute;
+            top: 40%;
+            left: -70px;
+        }
+        .btn-control.right{
+            position: absolute;
+            top: 40%;
+            right: -70px;
+        }
+        #myModal_gallery .btn-control,
+        #myModal_gallery .btn-control:hover i,
+        #myCarousel .btn-control,
+        #myCarousel .btn-control:hover i{
+            background-color: white;
+            border: white;
+            color: green;
+        }
+        #myModal_gallery .btn-control{
+            opacity: 0.8;
+        }
+        #myModal_gallery .glyphicon,
+        #myCarousel .glyphicon{
+            color: lightgrey;
+            font-size: 22px;
+        }
+
+        #myModal_gallary .close{
+            position: relative;
+            right: 12%;
+        }
+        #jssor_1{
+           position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:600px;overflow:hidden;visibility:hidden;
+        }
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .jssora106 {display:block;position:absolute;cursor:pointer;}
+        .jssora106 .c {fill:#fff;opacity:.3;}
+        .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+        .jssora106:hover .c {opacity:.5;}
+        .jssora106:hover .a {opacity:.8;}
+        .jssora106.jssora106dn .c {opacity:.2;}
+        .jssora106.jssora106dn .a {opacity:1;}
+        .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+    </style>
+</head>
+<body style="background-color: whitesmoke;">
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear1.jpg"></a>
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear2.jpg"></a>
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear3.jpg"></a>
+                </div>
+
+                <div class="item">
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear4.jpg"></a>
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear5.jpg"></a>
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear6.jpg"></a>
+                </div>
+
+                <div class="item">
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear1.jpg"></a>
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear2.jpg"></a>
+                    <a><img class="thumbnail" src="../src/mammals/bear/img_bear3.jpg"></a>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="btn btn-control left" href="#myCarousel" data-slide="prev" >
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+            <a class="btn btn-control right" href="#myCarousel" data-slide="next" >
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="myModal_gallery" class="modal fade" role="dialog" style="top:2%">
+            <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <!-- Modal content-->
+                    <!--<div id="jssor_1">-->
+                        <!--&lt;!&ndash; Loading Screen &ndash;&gt;-->
+                        <!--<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">-->
+                            <!--<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../src/icon/spin.svg" />-->
+                        <!--</div>-->
+                        <!--<div id="slides" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:500px;overflow:hidden;">-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear1.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear1.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear2.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear2.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear3.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear3.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear4.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear4.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear5.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear5.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear6.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear6.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear1.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear1.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear2.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear2.jpg" />-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img data-u="image" src="../src/bear/img_bear3.jpg" />-->
+                                <!--<img data-u="image" src="../src/bear/img_bear3.jpg" />-->
+                            <!--</div>-->
+                            <!--<a data-u="any" href="https://www.jssor.com" style="display:none">javascript slider</a>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; Thumbnail Navigator &ndash;&gt;-->
+                        <!--<div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:110px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">-->
+                            <!--<div data-u="slides">-->
+                                <!--<div data-u="prototype" class="p" style="width:190px;height:100px;">-->
+                                    <!--<div data-u="thumbnailtemplate" class="t"></div>-->
+                                    <!--<svg viewbox="0 0 16000 16000" class="cv">-->
+                                        <!--<circle class="a" cx="8000" cy="8000" r="3238.1"></circle>-->
+                                        <!--<line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>-->
+                                        <!--<line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>-->
+                                    <!--</svg>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; Arrow Navigator &ndash;&gt;-->
+                        <!--<div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:230px;left:30px;" data-scale="0.75">-->
+                            <!--<a class="btn btn-control">-->
+                                <!--<i class="glyphicon glyphicon-chevron-left"></i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:230px;right:30px;" data-scale="0.75">-->
+                            <!--<a class="btn btn-control">-->
+                                <!--<i class="glyphicon glyphicon-chevron-right"></i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+    </div>
+</body>
+<script>
+    $('#myCarousel').carousel({
+        interval: false,
+    });
+</script>
+<script type="text/javascript" src="../js/image_gallery.js"></script>
+</html>

@@ -1,0 +1,19 @@
+Green: #00e871
+Green background: #35b17c transparency:20%
+background: #ecf0f1
+Nav Bar color: #000000 transparency:90%
+Background on slide image: #000000 transparency:30%
+Background when Hover on thumbnails: #000000 transparency:65%
+footer background color: #000000 transparency:85%
+
+Title white: #ffffff
+font color on black: #ffffff transparency:50%
+font color on white: #4f4f4f
+
+English Font: Arial Regular
+Khmer Title font: NiDa Angkor
+Khmer normal font: NiDA Preahvihear
+Khmer font on paragraph: Khmer OS System
+
+
+

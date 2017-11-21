@@ -1,0 +1,331 @@
+
+#myCarousel .item img{
+    width: 100%;
+    min-height:160px;
+}
+
+#myCarousel .carousel-control{
+    width: 5%;
+    color:#00e871
+}
+
+#myCarousel .item > .carousel-caption{
+    left: 7%;
+    width: 330px;
+    bottom: 27%;
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+    border-top: solid 10px var(--main-color);
+    border-radius: 1px;
+
+}
+#myCarousel .item > .carousel-caption > .content-box{
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    word-wrap: break-word;
+}
+#myCarousel .item > .carousel-caption > .content-box > h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: "Khmer OS Battambang";
+}
+
+#myCarousel .item > .carousel-caption > .content-box > p{
+    margin-bottom: 0;
+}
+
+#myCarousel .item > .carousel-caption > .content-footer{
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.55);
+}
+#myCarousel .item > .carousel-caption > .content-footer .footer-left{
+    margin-top: 6px;
+}
+#myCarousel .item > .carousel-caption > .content-footer  i,
+#myCarousel .item > .carousel-caption > .content-footer span{
+    margin-right: 7px;
+    font-size: 18px;
+}
+#myCarousel .item > .carousel-caption > .content-footer  span{
+    margin-right: 20px;
+}
+#myCarousel .item > .carousel-caption > .content-footer .fa-heart{
+    color: white !important;
+    opacity: 0.5;
+}
+#myCarousel .item > .carousel-caption > .content-footer .fa-heart:hover{
+     opacity: 1;
+ }
+#myCarousel .item > .carousel-caption > .content-footer .fa-eye{
+    color: var(--main-color)
+}
+
+@media only screen and (max-width : 349px){
+
+    #myCarousel .item > .carousel-caption{
+        width: 120px;
+        border-top: solid 4px var(--main-color);
+        height: 60px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 8px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 8px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 4px 8px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 1px;
+       font-size: 8px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 1px;
+        font-size: 8px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 2px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 7px;
+        padding: 1px 3px;
+        border: solid 0.5px var(--main-color);
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width : 479px){
+    #myCarousel .item > .carousel-caption{
+        width: 150px;
+        border-top: solid 5px var(--main-color);
+        height: 80px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 10px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 9px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 5px 10px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 2px;
+        font-size: 9px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 2px;
+        font-size: 9px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 2px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 9px;
+        padding: 1px 2px;
+        border: solid 0.5px var(--main-color);
+    }
+}
+
+@media only screen and (min-width : 480px) and (max-width : 594px){
+    #myCarousel .item > .carousel-caption{
+        width: 185px;
+        border-top: solid 5px var(--main-color);
+        height: 100px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 14px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 11px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 7px 14px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 3px;
+        font-size: 11px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 3px;
+        font-size: 11px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 3px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 11px;
+        padding: 1px 4px;
+        border: solid 1px var(--main-color);
+    }
+}
+
+@media only screen and (min-width : 595px) and (max-width : 689px){
+    #myCarousel .item > .carousel-caption{
+        width: 220px;
+        border-top: solid 6px var(--main-color);
+        height: 125px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 16px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 12px;
+    }
+
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 8px 16px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 3px;
+        font-size: 12px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 4px;
+        font-size: 13px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 8px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 12px;
+        padding: 2px 6px;
+        border: solid 1px var(--main-color);
+    }
+}
+
+@media only screen and (min-width : 690px) and (max-width : 799px){
+    #myCarousel .item > .carousel-caption{
+        width: 240px;
+        border-top: solid 7px var(--main-color);
+        height: 155px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 17px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 13px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 9px 17px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 4px;
+        font-size: 15px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 10px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 13px;
+        padding: 3px 8px;
+        border: solid 1.5px var(--main-color);
+    }
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1023px){
+    #myCarousel .item > .carousel-caption{
+        width: 260px;
+        border-top: solid 7px var(--main-color);
+        height: 170px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 17px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 14px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 10px 17px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 6px;
+        font-size: 14px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 4px;
+        font-size: 16px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 13px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 14px;
+        padding: 4px 8px;
+        border: solid 1.5px var(--main-color);
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px){
+    #myCarousel .item > .carousel-caption{
+        width: 315px;
+        border-top:solid 8px var(--main-color);
+        height: 210px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box{
+        padding: 20px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > h3{
+        margin-bottom: 17px;
+        font-size: 24px;
+    }
+    #myCarousel .item > .carousel-caption > .content-box > p{
+        font-size: 14px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer{
+        padding: 15px 20px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer .footer-left{
+        margin-top: 7px;
+        font-size: 14px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  i,
+    #myCarousel .item > .carousel-caption > .content-footer span{
+        margin-right: 6px;
+        font-size: 16px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer  span{
+        margin-right: 18px;
+    }
+    #myCarousel .item > .carousel-caption > .content-footer > a > .btn-success{
+        font-size: 14px;
+        padding: 5px 10px;
+        border: solid 2px var(--main-color);
+    }
+}

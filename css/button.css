@@ -1,0 +1,32 @@
+
+.btn-success{
+    background-color:var(--main-color);
+    border:solid 2px var(--main-color);
+    border-radius: 50px;
+    padding: 5px 12px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.btn-success:hover{
+    background-color: var(--second-color);
+    color:white;
+    border:solid 2px var(--second-color);
+}
+
+.btn-success.active,
+.btn-success:active{
+    background-color:var(--second-color);
+    border-color:var(--second-color);
+}
+
+.btn-success:focus,
+.btn-success.focus {
+    color: #fff;
+    background-color: var(--second-color) !important;
+    border-color:var(--second-color);
+}
+
+.btn-primary{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin: 0;
+}

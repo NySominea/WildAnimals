@@ -1,0 +1,457 @@
+
+/*navigation bar*/
+#navbar .container-fluid{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+#navbar .navbar-nav{
+    margin: 0px;
+}
+#navbar .container{
+    padding: 0;
+}
+#navbar .navbar-default{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    width: inherit;
+    min-width: 320px;
+    background-color: rgba(0,0,0,0.8);
+    height: 70px;
+    margin: 0;
+}
+/*logo*/
+#navbar .navbar-brand{
+    margin: 15px 17px 15px 80px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: opacity 400ms ease;
+}
+.navbar-brand:focus,
+.navbar-brand:active,
+.navbar-brand:hover{
+    opacity: 0.7;
+}
+/*END OF NAV BAR*/
+
+/*--- NAV BAR LEFT ---*/
+#navbar .navbar-left li, .navbar-left {
+    float: left ;
+    padding: 0;
+    margin: 0;
+}
+#navbar ul.navbar-left li a{
+    margin: 26px 16px 26px 16px;
+    padding: 0px 0px 0px 0px;
+    /*opacity: 0.8;*/
+    vert-align: middle;
+    transition: all 400ms ease-out;
+}
+#navbar ul.navbar-left li a:focus,
+#navbar ul.navbar-left li a:active{
+    transform: scale(1);
+    opacity: 1;
+}
+#navbar ul.navbar-left li a:hover{
+    transform: scale(0.90);
+    opacity: 1;
+}
+#navbar ul.navbar-left li a:hover .wave{
+    animation: ripple-in1 2s;
+    animation-fill-mode: forwards;
+}
+/*--- animation wave ---*/
+#navbar .wave{
+    position:absolute;
+    width:41px;
+    height:41px;
+    top:-9px;
+    left: -9px;
+    background-color:#FFF;
+    transform: scale(0);
+    opacity:0.5;
+    border-radius:50%;
+}
+
+@keyframes ripple-in1 {
+    0% {transform: scale(0);opacity: 0}
+    20%{transform: scale(1);opacity:0.1;}
+    100%{transform: scale(1);opacity:0.2;}
+}
+/*--- end animation ---*/
+#navbar ul.navbar-left li a:focus{
+    opacity: 1;
+}
+#navbar li.nav-line{
+    border-left: 1px solid #ffffff;
+    border-radius: 1px;
+    opacity: 0.3;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    height: 21px;
+}
+/*full screen search*/
+#search{
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    border: none;
+    box-shadow: none;
+    background-color: rgb(34,34,34);
+
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    transition: all 0s ease;
+
+    /*scale(0, 0)*/
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 1;
+}
+#search.open {
+    height: 100%;
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+    -o-transform: translate(0px, 0px) scale(1, 1);
+    -ms-transform: translate(0px, 0px) scale(1, 1);
+    transform: translate(0px, 0px) scale(1, 1);
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width:80%;
+    color: #d5d5d5;
+    background: rgba(0, 0, 0, 0);
+    font-family: f_cate;
+    font-size: 40px;
+    text-space: 2px;
+    font-weight: 300;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(0,232,113,1);
+    margin-left: 10%;
+    padding: 2px 110px 7px 110px;
+    outline: none;
+}
+#search .btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    float: left;
+    opacity: 0.9;
+    top: 53%;
+    left: 15%;
+    padding: 0 0 0 0;
+}
+#search .close {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    opacity: 0.9;
+    padding: 0;
+    font-size: 27px;
+}
+/*--- END OF NAV BAR LEFT ---*/
+
+/*--- NAV BAR ITEMS RIGHT ---*/
+#navbar div.nav-menu ul.navbar-right{
+    margin: 0;
+}
+#navbar div.nav-menu ul.navbar-right li a{
+    text-align: center;
+    font-family: f_cate;
+    padding: 10px 15px 10px 15px;
+    color: #d5d5d5;
+    font-size: 17px;
+    border-bottom-width: 0;
+    transition: color 400ms ease;
+}
+
+#navbar div.nav-menu ul.navbar-right li a:hover{
+    color: rgba(0,232,113,1);
+    color: #00e871;
+    opacity: 1;
+}
+#navbar div.nav-menu ul.navbar-right li a:focus{
+    color: #00e871;
+    opacity:1;
+}
+#navbar div.nav-menu ul.navbar-right li a:active{
+    color: #00e871;
+    opacity: 1;
+}
+#navbar div.nav-menu ul.navbar-right li.active:hover a,
+#navbar div.nav-menu ul.navbar-right li.active:focus a,
+#navbar div.nav-menu ul.navbar-right li.active a{
+    color: #00e871 !important;
+    opacity: 1 !important;;
+    background-color: transparent !important;
+    border-bottom: 3px solid #00e871;
+}
+#navbar div.nav-menu{
+    padding: 0;
+    margin: 16px 65px 16px 65px;
+    height: 43px;
+    border: none;
+    box-shadow: none;
+}
+/*--- END NAV BAR ITEMS RIGHT ---*/
+
+/*--- TOGGLE BUTTON ---*/
+#navbar div.navbar-header button.navbar-toggle span.icon-bar{
+    background-color: #d5d5d5;
+    opacity: 0.8;
+}
+#navbar div.navbar-header button.navbar-toggle{
+    padding: 0;
+    border: none;
+    margin: 0px 15px 0 0;
+    border-radius: 0;
+    border: none;
+    height: 50px;
+}
+#navbar div.navbar-header button.navbar-toggle:active,
+#navbar div.navbar-header button.navbar-toggle:focus,
+#navbar div.navbar-header button.navbar-toggle:hover{
+    background-color: transparent !important;
+}
+
+#navbar .navbar-collapse{
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+#navbar .navbar-toggle .icon-bar {
+    width: 22px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+/*--- END OF TOGGLE BUTTON ---*/
+
+/*--- ANIMATED X---*/
+#navbar .navbar-toggle.x .icon-bar:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+}
+#navbar .navbar-toggle.x .icon-bar:nth-of-type(2) {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#navbar .navbar-toggle.x .icon-bar:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 90%;
+    transform-origin: 10% 90%;
+}
+/*--- animated X collapsed ---*/
+#navbar .navbar-toggle.collapsed .icon-bar:nth-of-type(1) {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+#navbar .navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#navbar .navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+/* END ANIMATED X */
+
+@media only screen and (min-width: 768px){
+    /*--- pc screen ---*/
+    #navbar .navbar-collapse{
+        background-color: transparent;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+    /*--- Mobile portrait ---*/
+    /*--- selected ---*/
+    #navbar div.nav-menu ul.navbar-right li.active:hover a,
+    #navbar div.nav-menu ul.navbar-right li.active:focus a,
+    #navbar div.nav-menu ul.navbar-right li.active a{
+        background-color: rgba(0,0,0,0.1) !important;
+        color: #00e871;
+        opacity: 1;
+        border-left: 5px solid #00e871;
+        border-bottom: none;
+        border-radius: 1px;
+    }
+
+    #navbar .navbar-default,
+    #navbar .navbar-header{
+        height: 50px;
+    }
+    #navbar .navbar-brand{
+        width: 32px;
+        height: 32px;
+        margin: 9px 20px 9px 15px;
+    }
+    /*nav bar left*/
+    #navbar ul.navbar-left li a{
+        margin: 15px 10px 15px 10px;
+        padding: 0px 0px 0px 0px;
+        width: 20px;
+        height: 20px;
+    }
+    #navbar ul.navbar-left li a img{
+        width: 20px;
+        height: 20px;
+    }
+    #navbar li.nav-line{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        height: 18px;
+    }
+    #navbar div.nav-menu{
+        margin: 0;
+    }
+    /*animated right nav bar nav*/
+    #navbar .wave{
+        width:32px;
+        height:32px;
+        top:-5px;
+        left: -6px;
+    }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+/*--- Mobile landscape ---*/
+    /*--- selected ---*/
+    #navbar div.nav-menu ul.navbar-right li.active:hover a,
+    #navbar div.nav-menu ul.navbar-right li.active:focus a,
+    #navbar div.nav-menu ul.navbar-right li.active a{
+        background-color: rgba(0,0,0,0.1) !important;
+        color: #00e871;
+        opacity: 1;
+        border-left: 5px solid #00e871;
+        border-bottom: none;
+        border-radius: 1px;
+    }
+
+    #navbar .navbar-default,
+    #navbar .navbar-header{
+        height: 50px;
+    }
+    /*logo*/
+    #navbar .navbar-brand{
+        width: 32px;
+        height: 32px;
+        margin: 9px 20px 9px 15px;
+    }
+    /*nav bar left*/
+    #navbar ul.navbar-left li a{
+        margin: 15px 10px 15px 10px;
+        padding: 0px 0px 0px 0px;
+        width: 20px;
+        height: 20px;
+    }
+    #navbar ul.navbar-left li a img{
+        width: 20px;
+        height: 20px;
+    }
+    #navbar li.nav-line{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        height: 18px;
+    }
+    #navbar div.nav-menu{
+        margin: 0;
+    }
+    /*animated right nav bar nav*/
+    #navbar .wave{
+        width:32px;
+        height:32px;
+        top:-5px;
+        left: -6px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 800px) {
+    /*--- Small Tablet portrait ---*/
+    #navbar .navbar-default{
+        height: 60px;
+    }
+    #navbar .navbar-header{
+        height: 60px;
+    }
+    #navbar .navbar-brand{
+        margin: 10px 20px 10px 27px;
+    }
+    #navbar div.nav-menu{
+        margin-right: 12px;
+    }
+    ul.navbar-left li a{
+        margin: 20px 10px 20px 10px;
+        padding: 0px 0px 0px 0px;
+        width: 20px;
+        height: 20px;
+    }
+    ul.navbar-left li a img{
+        width: 20px;
+        height: 20px;
+    }
+    li.nav-line{
+        margin-top: 21px;
+        margin-bottom: 21px;
+        height: 18px;
+    }
+    div.nav-menu{
+        padding: 0;
+        margin: 8px 65px 8px 65px;
+        height: 43px;
+        border: none;
+        box-shadow: none;
+    }
+    /*animated right nav bar nav*/
+    .wave{
+        width:32px;
+        height:32px;
+        top:-5px;
+        left: -6px;
+    }
+}
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+    /*--- Small Tablet landscape ---*/
+    #navbar .navbar-default,
+    #navbar .navbar-header{
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width : 1024px){
+    /*--- Tablet portrait ---*/
+    #navbar .navbar-default,
+    #navbar .navbar-header{
+        height: 70px;
+    }
+}
+/*@media only screen and (min-width : 1024px) and (max-width : 1366px) {!*--- Tablet landscape --- *!}*/
+

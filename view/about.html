@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/loading_page.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/navbar.js"></script>
+
+    <style>
+        :root{
+            --main-color: #00e871;
+            --second-color: #0c8e4c;
+        }
+        p{
+            font-family: f_cate !important;
+            line-height: 1.6;
+        }
+        h3{
+            font-family: f_logo !important;
+        }
+        #footer.container-fluid{
+            padding: 0px;
+        }
+        #about.container{
+            margin-top: 18%;
+            margin-bottom: 10%;
+            width:90%;
+        }
+
+        #about .panel-primary{
+            border-radius: 0px;
+            border: none;
+            box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3)
+        }
+        #about .panel-primary .panel-heading{
+            border-radius: 0px;
+            background-color: #475468;
+            padding: 20px;
+        }
+        #about .panel-primary .panel-body{
+            padding: 20px;
+            word-break: break-all;
+            text-indent: 30px;
+        }
+        #about .panel-primary .panel-body p{
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        @media screen and (max-width: 320px) {
+            body{
+                width: 320px !important;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            #about.container{
+                margin-top: 25%;
+                margin-bottom: 10%;
+                width: 100%;
+            }
+        }
+        @media (min-width: 768px) {
+            #about.container {
+                width: 70%;
+                margin-top: 14%;
+                margin-bottom: 10%;
+            }
+
+        }
+    </style>
+
+</head>
+<body style="background-image:url('../src/background/background.png');background-size: 100%;background-repeat: no-repeat;background-color: #0d1413">
+
+    <!--Nav bar menu-->
+    <div class="container-fluid" id="navbar" style="z-index: 999">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../view/index.html" class="navbar-brand"><img src="../src/icon/navbar/logo.svg" alt="Logo"></a>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-line"></li>
+                    <li id="icon_seach"><a href="#search" ><div class="wave"></div><img src="../src/icon/navbar/ic_search.svg" alt="Search"
+                                                                                        width="23px" height="23px"></a></li>
+                    <li class="nav-line"></li>
+                    <li><a href="#" ><div class="wave"></div><img src="../src/icon/navbar/ic_account.svg" alt="Account"
+                                                                  width="23px" height="23px"></a></li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="../view/index.html">ថ្មីៗ</a></li>
+                        <li class=""><a href="../view/category/mammals/1.page1.html">ថនិកសត្វ</a></li>
+                        <li class=""><a href="../view/category/Reptiles/1.page1.html">សត្វល្មូន</a></li>
+                        <li class=""><a href="../view/category/Birds/1.page1.html">សត្វបក្សី​</a></li>
+                        <li class=""><a href="../view/category/Insects/1.page1.html">សត្វល្អិត</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--full screen search bar-->
+    <div id="search">
+        <a href="#"><div class="wave"></div><img class="close" src="../src/icon/navbar/ic_close.svg" alt="close" width="20px" height="20px"></a>
+        <form>
+            <button type="submit" class="btn btn-primary"><div class="wave"></div>
+                <img src="../src/icon/navbar/ic_search.svg" alt="search" width="25px" height="25px">
+            </button>
+            <input type="search" value="" placeholder="ស្វែងរកនៅទីនេះ" />
+        </form>
+    </div>
+    <!--End Nav bar menu-->
+
+    <div id="about" class="container animated jackInTheBox">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3 style="font-size: 18px;margin: 0px">តើវេបសាយ <span style="color:var(--main-color)">សត្វព្រៃកម្ពុជា​ </span>ជាវេបសាយអ្វី?</h3></div>
+            <div class="panel-body"><p>សត្វព្រៃ គឺជាវេបសាយសម្រាប់ ឲ្យយើងធ្វើការសិក្សា និងស្វែងយល់ទូទៅអំពីសត្វព្រៃក្នុងប្រទេសកម្ពុជា។ យើងដឹងហើយថា
+                ប្រទេសកម្ពុជាដែលសម្បូរទៅដោយ ធនធានធម្មជាតិ ជាពិសេស ធនធានសត្វ។ វេបសាយនេះ នឹងពណ៍នាអំពីលក្ខណះទូទៅរបស់សត្វទាំងនោះ ព្រមទាំង ការបន្តពូជ  ប្រភពកំណើត និងជម្រករបស់ពួវា ។
+                មួយវិញទៀត វេបសាយនេះ មិនត្រឹមតែផ្ដល់ចំណេះដឹងទូទៅទាក់ទងនឹងសត្វព្រៃតែប៉ុណ្ណោះទេ វាក៏ជាកត្តាមួយដែលអាចជំរុញនូវការថែទាំ និងគាំពាចំពោះសត្វព្រៃកម្ពុជា ជាពិសេសសត្វព្រៃដែលជិតផុតពូជ ៕</p></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid" id="footer">
+        <footer class="footer">
+            <div class=" footer container-fluid">
+                <div class="foot-background"></div>
+                <div class="foot-black"></div>
+                <div class="row1">
+                    <i class="foot-logo"><img src="../src/icon/footer/logo_white.svg" alt="Logo" width="42px" height="42px"></i>
+                    <i class="foot-text1"><a style="color:var(--main-color)">អំពីសត្វព្រៃ</a></i>
+                    <i class="foot-text1"><a href="contact.html">ទំនាក់ទំនង</a></i>
+                </div>
+                <div class="row2">
+                    <div class="foot-line"></div>
+                </div>
+                <div class="row3">
+                    <i class="foot-icon1"><div class="wave"></div><img src="../src/icon/footer/ic_f.svg" alt="Facebook" width="28px" height="28px"></i>
+                    <i class="foot-icon1"><div class="wave"></div><img src="../src/icon/footer/ic_gg.svg" alt="Google+" width="28px" height="28px"></i>
+                </div>
+                <div class="row4">
+                    <i class="foot-icon2"><img src="../src/icon/footer/ic_copy_right.svg" alt="Copy & Right" width="20px" height="20px"></i>
+                    <i class="foot-text2"><a>2017. All rights reserved</a></i>
+                </div>
+                <!--<div class="foot-background"><img class="foot-background" src="../src/background/footer-image.jpg" alt=""></div>-->
+
+            </div>
+        </footer>
+    </div>
+    <!--End Footer-->
+
+    <!--Page Loading-->
+    <div class="se-pre-con"></div>
+    <!--End Page Loading-->
+</body>
+<script src="../js/index.js"></script>
+<script>
+    $(function(){
+        $(document).ready(function(){
+            $(this).ready(function(){
+                $(this).find('.active').removeClass('active')
+            })
+        })
+
+    })
+</script>
+
+
+</html>

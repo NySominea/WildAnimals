@@ -1,0 +1,198 @@
+
+#content_body a,#content_body .btn, #content_body h3,#content_body p{
+    padding: 0;
+    margin: 0;
+    line-height:0px;
+    border-radius: 50% ;
+}
+#content_body{
+    background-repeat: no-repeat;
+    background-size:100% 100%
+}
+#content_body .well{
+    margin: 20px auto;
+    max-width: 275px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19);
+}
+
+#content_body .well:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content_body .img-content{
+    overflow: hidden;
+}
+#content_body .well .carousel-caption{
+    padding:0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 0 !important;
+}
+#content_body .well .carousel-caption h3{
+    padding: 25px 20px;
+}
+#content_body .well span{
+    margin-left: 0px;
+    margin-top: 10px !important;
+}
+#content_body .well i {
+    font-size: 18px;
+    color: #4f4f4f;
+    padding: 7px;
+}
+
+#content_body .well .btn-icon:hover{
+    border-radius: 50%;
+    background-color: lightgray;
+    transition: 0.7s all;
+}
+#content_body .well .btn:active{
+    box-shadow: 0 0 1px;
+    /*padding: 1px;*/
+}
+#content_body .well .content-footer{
+    padding-top: 7px;
+    padding-bottom: 0px;
+    color: #4f4f4f;
+}
+#content_body .icon-eye{
+    background-image: url('../src/icon/navbar/ic_search.svg');
+}
+
+@media only screen and (max-width: 449px){
+    #content_body .row{
+        margin:10px auto;
+        width: 100%;
+    }
+    #content_body .well .content-footer{
+        display: none;
+    }
+    #content_body .well{
+        margin: 7px auto;
+        padding: 4px;
+    }
+    #content_body .well .carousel-caption h3{
+        font-size: 17px;
+        padding: 15px 7px;
+    }
+    .col-xs-6{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+}
+@media only screen and (min-width: 450px) and (max-width: 549px){
+    #content_body .row{
+        margin:auto;
+        margin-top: 10px;
+        width: 95%;
+    }
+    #content_body .well .content-footer{
+        display: none;
+    }
+    #content_body .well{
+        margin: 7px auto;
+        padding: 5px;
+    }
+    #content_body .well .carousel-caption h3{
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+    #content_body .row{
+        padding: 0px 5px;
+    }
+    #content_body .col-xs-6{
+        padding: 7px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 599px) {
+    #content_body .row{
+        margin:10px auto;
+        width: 100%;
+    }
+    #content_body .content-footer .row{
+        margin: 0;
+        width: 100%;
+    }
+    #content_body .content-footer .row .col-xs-4{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 639px) {
+    #content_body .row{
+        margin: 20px auto;
+        width: 95%;
+    }
+    #content_body .content-footer .row{
+        margin: 0;
+        width: 100%;
+    }
+    #content_body .content-footer .row .col-xs-4{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 699px) {
+    #content_body .row{
+        margin: 20px auto;
+        width: 90%;
+    }
+    #content_body .content-footer .row{
+        margin: 0;
+        width: 100%;
+    }
+    #content_body .content-footer .row .col-xs-4{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 759px) {
+    #content_body .row{
+        margin:auto;
+        margin-top: 20px;
+        width: 85%;
+    }
+    #content_body .content-footer .row{
+        margin: 0;
+        width: 100%;
+    }
+    #content_body .content-footer .row .col-xs-4{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 760px) and (max-width: 991px) {
+    #content_body .row{
+        margin:auto;
+        margin-top: 20px;
+        width: 80%;
+    }
+    #content_body .content-footer .row{
+        margin: 0;
+        width: 100%;
+    }
+    #content_body .content-footer .row .col-xs-4{
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #content_body .row{
+        margin:30px auto;
+        width: 90%;
+    }
+    #content_body .content-footer .row{
+        margin: 0;
+        width: 100%;
+    }
+    #content_body .content-footer .row .col-xs-4{
+        padding: 0;
+    }
+    #content_body .col-md-4{
+        /*float: right;*/
+    }
+}

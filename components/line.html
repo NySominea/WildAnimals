@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">-->
+    <script>
+        $(document).on('click', '#btn-down', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#line').offset().top
+            }, 500);
+        });
+    </script>
+</head>
+<body>
+    <div id="line" class="container-fluid"  style="padding: 0 !important;">
+        <div class="text-center">
+            <a id="btn-down"><button type="button" class="btn btn-down"><i class="fa fa-chevron-down" style="color: black;"></i></button></a>
+        </div>
+    </div>
+</body>
+</html>

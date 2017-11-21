@@ -1,0 +1,254 @@
+
+#body_contact .container{
+    margin: 14% 0 10% 0;
+    width: 100%;
+    height: auto;
+}
+#contact .row{
+    padding: 0 0 0 0;
+    /*width: 100%;*/
+}
+
+#contact .container.col{
+    background-color: #f3f3f3;
+    padding: 0;
+    margin: 6% 0 0 0;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#contact .card:hover{
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.4);
+}
+#contact .base{
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+#contact .row.base{
+    padding: 0;
+}
+
+/*--- MEMBER IMAGE ---*/
+#contact .img-member{
+    -webkit-transform: translate(-50%, 25%);
+    width: 49%;
+    height: 49%;
+    border-radius: 50%;
+    margin: 0 50% 15% 50%;
+}
+#contact .col-lg-2.profile,
+#contact .col-md-6.profile,
+#contact .col-sm-12.profile{
+    padding: 0;
+}
+/*--- END MEMBER IMG ---*/
+
+/*--- MEMBER NAME ---*/
+#contact .name-member{
+    text-align: center;
+
+    font-size: 14px;
+    color: #4f4f4f;
+    margin: 5% 0 5% 0;
+}
+#contact .name-member h3{
+    font-size:14px;
+}
+#contact .email-text{
+    font-family: Arial;
+    color: white;
+    margin: 0;
+}
+/*--- END MEMBER NAME ---*/
+
+/*--- LINE ---*/
+#contact .line{
+    border-bottom: 1px solid #475468;
+    opacity: 0.3;
+    margin: 0 6% 0 6%;
+}
+/*--- END LINE ---*/
+
+/*--- SOCIAL ICON ---*/
+#contact .social{
+    padding: 0;
+}
+#contact .icon-fb{
+    width: 24%;
+    height: 24%;
+    display: block;
+    margin: 13% 6% 13% auto;
+}
+#contact .icon-gg{
+    width: 24%;
+    height: 24%;
+    display: block;
+    margin: 13% auto 13% 6%;
+}
+#contact .ic:hover img {
+    opacity: 0.5;
+}
+
+/*--- END SOCIAL ICON ---*/
+
+/*--- EMAIL ---*/
+#contact .email-base{
+    background-color: #475468;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#contact .email_icon img{
+    width: 15%;
+    height: 15%;
+    display: inline-block;
+    margin: 10% 0 10% auto;
+}
+#contact .email-text p{
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Arial;
+    color: #ffffff;
+    padding: 0;
+    margin: 10% auto 10% 5%;
+}
+/*--- END EMAIL ---*/
+
+@media only screen and (max-width : 480px) {
+    /*--- Mobile portrait ---*/
+    #contact .row{
+        padding: 0;
+        margin: 0;
+    }
+    /*--- MEMBER IMAGE ---*/
+    #contact .img-member{
+        -webkit-transform: translate(-50%, 25%);
+        width: 44%;
+        height: 44%;
+        border-radius: 50%;
+        margin: 0 50% 15% 50%;
+    }
+    /*--- NAME ---*/
+    #contact .name-member{
+        text-align: center;
+        font-family: f_logo;
+        font-size: 20px;
+        color: #4f4f4f;
+        margin: 5% 0 5% 0;
+    }
+    /*SOCIAL*/
+    #contact .icon-fb{
+        width: 13%;
+        display: inline-block;
+        margin: 6% auto 6% auto;
+    }
+    #contact .icon-gg{
+        width: 13%;
+        display: inline-block;
+        margin: 6% auto 6% auto;
+    }
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+/*--- Mobile landscape ---*/
+    #contact .row{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-left: 0%;
+    }
+    /*--- MEMBER IMAGE ---*/
+    #contact .img-member{
+        width: 35%;
+        height: 35%;
+        margin: 0 50% 10% 50%;
+    }
+    /*--- NAME ---*/
+    #contact .name-member{
+        font-size: 20px;
+    }
+    /*SOCIAL*/
+    #contact .icon-fb{
+        width: 12%;
+        display: inline-block;
+        margin: 5% 1% 5% auto;
+    }
+    #contact .icon-gg{
+        width: 12%;
+        display: inline-block;
+        margin: 5% auto 5% 1%;
+    }
+    /*email*/
+    #contact .email-base{
+        padding: 7px 0px;
+    }
+    #contact .email_icon img{
+        width: 7%;
+        margin: 6% 0 5% auto;
+    }
+    #contact .email-text p{
+        font-size: 20px;
+        margin: 5% auto 5% 2%;
+    }
+}
+@media only screen and (min-width : 768px) and (max-width : 800px) {
+/*--- Small Tablet portrait ---*/
+    #contact .row{
+        padding: 0;
+        margin: 0;
+    }
+    /*--- MEMBER IMAGE ---*/
+    #contact .img-member{
+        width: 10%;
+        height: 10%;
+        margin: 0 50% 5% 50%;
+    }
+    /*--- MEMBER IMAGE ---*/
+    #contact .img-member{
+        -webkit-transform: translate(-50%, 25%);
+        width: 44%;
+        height: 44%;
+        border-radius: 50%;
+        margin: 0 50% 15% 50%;
+    }
+    /*--- NAME ---*/
+    #contact .name-member{
+        font-size: 20px;
+        margin: 5% 0 5% 0;
+    }
+    /*SOCIAL*/
+    #contact .social.col-md-6{
+        padding: 0px 10px;
+    }
+    #contact .social.col-md-6:first-child{
+        text-align: right;
+    }
+    #contact .social.col-md-6:last-child{
+        text-align: left;
+    }
+    #contact .icon-fb{
+        width: 25%;
+        display: inline-block;
+        margin: 10% 1% 10% auto;
+    }
+    #contact .icon-gg{
+        width: 25%;
+        display: inline-block;
+        margin: 10% auto 10% 1%;
+    }
+    /*email*/
+    #contact .email_icon img{
+        width: 7%;
+        margin: 5% 0 5% auto;
+    }
+    #contact .email-text p{
+        font-size: 20px;
+        margin: 5% auto 5% 2%;
+    }
+}
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+/*--- Small Tablet landscape ---*/
+}
+@media only screen and (min-width : 1024px){
+/*--- Tablet portrait ---*/
+}

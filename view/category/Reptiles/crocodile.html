@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../css/animate.css">
+    <link rel="stylesheet" href="../../../css/line.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/font.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/button.css">
+    <link rel="stylesheet" href="../../../css/loading_page.css">
+    <link rel="stylesheet" href="../../../css/detail_page.css">
+    <link rel="stylesheet" href="../../../css/pre_detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic">
+    <!--<link rel="stylesheet" href="../../../css/button.css">-->
+    <link rel="stylesheet" href="../../../font-awesome-4.7.0/css/font-awesome.css">
+
+    <script src="../../../js/library/jssor.slider-26.3.0.min.js"></script>
+    <script src="../../../jquery-3.2.1.min.js"></script>
+    <script src="../../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../../../js/library/jquery.touchSwipe.js"></script>
+    <script src="../../../js/navbar.js"></script>
+    <style>
+        :root{
+            --main-color: #00e871;
+            --second-color: #0c8e4c;
+        }
+        p,h4{
+            font-family: f_cate !important;
+            line-height: 1.6;
+        }
+        h2,h3{
+            font-family: f_logo !important;
+        }
+        @media screen and (max-width: 320px) {
+            body{
+                width: 320px !important;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+
+<!--Nav bar menu-->
+<div class="container-fluid" id="navbar" style="z-index: 999">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../index.html" class="navbar-brand"><img src="../../../src/icon/navbar/logo.svg" alt="Logo"></a>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="nav-line"></li>
+                <li id="icon_seach"><a href="#search" ><div class="wave"></div><img src="../../../src/icon/navbar/ic_search.svg" alt="Search"
+                                                                                    width="23px" height="23px"></a></li>
+                <li class="nav-line"></li>
+                <li><a href="#" ><div class="wave"></div><img src="../../../src/icon/navbar/ic_account.svg" alt="Account"
+                                                              width="23px" height="23px"></a></li>
+            </ul>
+        </div>
+        <div class="nav-menu">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="../../../view/index.html">ថ្មីៗ</a></li>
+                    <li class=""><a href="../../../view/category/mammals/1.page1.html">ថនិកសត្វ</a></li>
+                    <li class="active"><a href="../../../view/category/Reptiles/1.page1.html">សត្វល្មូន</a></li>
+                    <li class=""><a href="../../../view/category/Birds/1.page1.html">សត្វបក្សី​</a></li>
+                    <li class=""><a href="../../../view/category/Insects/1.page1.html">សត្វល្អិត</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--full screen search bar-->
+<div id="search">
+    <a href="#"><div class="wave"></div><img class="close" src="../../../src/icon/navbar/ic_close.svg" alt="close" width="20px" height="20px"></a>
+    <form>
+        <button type="submit" class="btn btn-primary"><div class="wave"></div>
+            <img src="../../../src/icon/navbar/ic_search.svg" alt="search" width="25px" height="25px">
+        </button>
+        <input type="search" value="" placeholder="ស្វែងរកនៅទីនេះ" />
+    </form>
+</div>
+<!--End Nav bar menu-->
+
+<!--Image Top-->
+<div id='image_top' class="container-fluid" style="position: relative">
+    <img src="../../../src/reptiles/crocodile/slide.jpg" style="width: 100%;">
+    <div class="carousel-caption" style="z-index: 0">
+        <h2>សត្វក្រពើ</h2>
+    </div>
+</div>
+<!--End Image Top-->
+
+<!--Line Under Slider-->
+<div id="line" class="container-fluid"  style="padding: 0 !important;">
+    <div class="text-center">
+        <a id="btn-down"><button type="button" class="btn btn-down"><i class="fa fa-chevron-down" style="color: black"></i></button></a>
+    </div>
+</div>
+<!--End Line Under Slider-->
+
+<!--Body Content-->
+<div  id='body' style="background: linear-gradient(0deg,rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)), url('../../../src/background/background.png')">
+    <div class="container">
+        <div id="body_head">
+            <div class="well carousel">
+                <div class="preview-profile-image">
+                    <img class="img-circle carousel-caption" src="../../../src/reptiles/crocodile/profile.jpg">
+                </div>
+                <div id="preview-content" class="row">
+                    <div class="col-md-4 col-sm-6" >
+                        <!--<img src="../../../src/bear/preview/img_bear_preview1.png">-->
+                        <div class="image-review" style="background: linear-gradient(0deg,rgba(0,0,0,0.7),
+                                    rgba(0,0,0,0.7)),url('../../../src/reptiles/crocodile/c1.jpg'),no-repeat;">
+                            <img src="../../../src/icon/preview/ic_type.svg"
+                                 alt="" width="36px" height="36px">
+                            <span><h3 style="padding: 0;margin: 0;display: inline" class="">ប្រភេទ</h3></span>
+                            <hr style="margin-top: 25px;">
+                            <div class="row line-description">
+                                <div class="col-sm-6 col-xs-6" style="padding-right: 0px">
+                                    <h4>ឈ្មោះវិទ្យាសាស្រ្ត</h4>
+                                </div>
+                                <div class="col-sm-6 col-xs-6" >
+                                    <h4 style="font-family: Arial !important;">Ursus Arctos</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row line-description">
+                                <div class="col-sm-6 col-xs-6">
+                                    <h4>ថ្នាក់</h4>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <h4>ថនិកសត្វ</h4>
+                                </div>
+                            </div>
+                                 <hr>
+                            <div class="row line-description">
+                                <div class="col-sm-6 col-xs-6">
+                                    <h4>ក្រុម</h4>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <h4>មង្សារសី</h4>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-6" >
+                        <div class="image-review" style="background: linear-gradient(0deg,rgba(0,0,0,0.7),
+                                    rgba(0,0,0,0.7)),url('../../../src/reptiles/crocodile/c2.jpg');">
+                            <img src="../../../src/icon/preview/ic_app.svg"
+                                 alt="" width="36px" height="36px">
+                            <span><h3 style="padding: 0;margin: 0;display: inline" class="">លក្ខណះទូទៅ</h3></span>
+                            <hr style="margin-top: 25px;">
+                            <div class="row line-description">
+                                <div class="col-sm-5 col-xs-6">
+                                    <h4>ទំហំ</h4>
+                                </div>
+                                <div class="col-sm-7 col-xs-6">
+                                    <h4 style="font-family: Arial !important;">1.50m​ - 2.50m</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row line-description">
+                                <div class="col-sm-5 col-xs-6">
+                                    <h4>ទម្ងន់</h4>
+                                </div>
+                                <div class="col-sm-7 col-xs-6">
+                                    <h4 style="font-family: Arial !important;">318kg</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row line-description">
+                                <div class="col-sm-5 col-xs-6">
+                                    <h4>អាយុ</h4>
+                                </div>
+                                <div class="col-sm-7 col-xs-6 list-inline">
+                                    <h4 style="font-family: Arial !important;">15 - 20 <span style="font-family: f_cate"> ឆ្នាំ</span></h4>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-6" >
+                        <div class="image-review" style="background: linear-gradient(0deg,rgba(0,0,0,0.7),
+                                    rgba(0,0,0,0.7)),url('../../../src/reptiles/crocodile/c3.jpg');">
+                            <img src="../../../src/icon/preview/ic_dna.svg"
+                                 alt="" width="36px" height="36px">
+                            <span><h3 style="padding: 0;margin: 0;display: inline" class="">ការវិវត្ត</h3></span>
+                            <hr style="margin-top: 25px;">
+                            <div class="row line-description">
+                                <div class="col-sm-5 col-xs-6">
+                                    <h4>ប្រភពកំ​ណេីត</h4>
+                                </div>
+                                <div class="col-sm-7 col-xs-6">
+                                    <h4>ទ្វីបអាស៊ី</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row line-description">
+                                <div class="col-sm-5 col-xs-6">
+                                    <h4>បុព្វបុរស</h4>
+                                </div>
+                                <div class="col-sm-7 col-xs-6">
+                                    <h4 style="font-family: Arial !important;">Ursus Etruscus</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row line-description">
+                                <div class="col-sm-5 col-xs-6">
+                                    <h4>ចាប់កំណើត</h4>
+                                </div>
+                                <div class="col-sm-7 col-xs-6">
+                                    <h4 style="font-family: Arial !important;">800,000 <span style="font-family: f_cate"> ឆ្នាំមុន</span></h4>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body_detail" class="">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../../../src/reptiles/crocodile/c4.jpg" width="100%">
+                </div>
+                <div class="col-sm-6">
+                    <p> វាប្រវែង 1.2 ទៅ 1.5 m​ និង ទំងន់ 6kg ទៅ 12kg ។ នៅពេលពេញវ័យមានប្រវែង 2.1m ហើយមានទំងន់ 40ទៅ70kg
+                        ។ក្រពើញីធំបំផុតមានប្រវែង 3.2m ទំងន់ 150kg និង ក្រពើឈ្មោលអាចដល់
+                        4m ទំងន់ 350kg។នៅខាងក្រោយភ្នែករបស់វានីមួយៗមានឆ្អឺងកោងលើក្បាល។
+                        វាអាចមានអាយុមធ្យមយ៉ាងហោចណាស់ក៏ 30 ទៅ 40 ឆ្នាំ ។</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <img src="../../../src/reptiles/crocodile/c5.jpg" width="100%">
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <p>វាជាសត្វដែលស៊ីសាច់ជាអាហារមានដូចជា៖ត្រី ថនិកសត្វតូចៗ។
+                        វាជាសត្វដែលរស់នៅក្នុងទឹកសាបហើយរស់ក្នុងទឺកទន្លេដែលហូរយឺតៗ,បឹង
+                        ប្រលាយ  ទំនាបបឹង  ។ ក្រពើវាបន្តពូជនៅរដូវភ្លៀងធ្លាក់។
+                        ពងរបស់វាមានពី 15 ទៅ 50 ។</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../../../src/reptiles/crocodile/c6.jpg" width="100%">
+                </div>
+                <div class="col-sm-6">
+                    <p>វារស់នៅប្រទេសកម្ពុជាមានដូចជា នៅស្រែពក , សេកុង , ស្រែអំបិល កំពុងសោម ,  ពោធិ័សាត់
+                        កែប    , តាតៃ   ,ទន្លេអារែង  ,វាលល្បាប់វាលវែង។វាត្រូវបានគំរាមកំហែងពីសកម្មភាពមនុស្សដូចជាការយកស្បែក
+                        ធ្វើសម្ភារ៖ប្រើប្រាស់ផ្សេងៗដូចជា កាតាប , ខ្សែក្រវាត់ .......​និងសង្រ្គាមជាដើម។</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Icons-->
+        <div id="body_content_icons">
+            <div class="row text-center">
+                <img src="../../../src/icon/ic_map.svg" width="30px" data-toggle="modal" data-target="#mapModal">
+                <img src="../../../src/icon/ic_play.svg" width="30px" data-toggle="modal" data-target="#myModal">
+                <img src="../../../src/icon/ic_gallery.svg" width="30px" id="gallery_icon" class="hidden">
+            </div>
+        </div>
+        <div id="myModal" class="modal fade animated zoomIn" role="dialog">
+            <div class="modal-dialog" style="top: 10%;">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close video_close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">សត្វក្រពើ</h3>
+                    </div>
+                    <div class="modal-body"  style="text-align: center">
+                        <video class="video" width="100%" controls autoplay>
+                            <source src="../../../src/videos/zz.mp4" type="video/mp4">
+                        </video></div>
+                </div>
+            </div>
+        </div>
+        <div id="mapModal" class="modal fade animated zoomIn" role="dialog">
+            <div class="modal-dialog"  style="z-index: 2147483647">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close map_close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">សត្វក្រពើ</h4>
+                    </div>
+                    <div class="modal-body"  style="text-align: center;z-index: 10000">
+                        <div id="map" style="width:100%;height:350px;z-index: 10000"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Icons-->
+
+
+        <!--Image Gallery-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c1.jpg"></a>
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c2.jpg"></a>
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c3.jpg"></a>
+                </div>
+
+                <div class="item">
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c4.jpg"></a>
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c5.jpg"></a>
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c6.jpg"></a>
+
+                </div>
+
+                <div class="item">
+                    <a><img class="thumbnail" src="../../../src/reptiles/crocodile/c7.jpg"></a>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="btn btn-control left" href="#myCarousel" data-slide="prev" >
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+            <a class="btn btn-control right" href="#myCarousel" data-slide="next" >
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+
+        <div id="myModal_gallery" class="modal fade" role="dialog" style="top:2%"></div>
+        <!--End Image Gallery-->
+    </div>
+</div>
+<!--End Body Content-->
+
+<!--Line Under Slider-->
+<div id="line_page" class="container-fluid"  style="padding: 0 !important; background-color: black">
+</div>
+<!--End Line Under Slider-->
+
+<!--Footer-->
+<div class="container-fluid" id="footer">
+    <footer class="footer">
+        <div class=" footer container-fluid">
+            <div class="foot-background"></div>
+            <div class="foot-black"></div>
+            <div class="row1">
+                <i class="foot-logo"><img src="../../../src/icon/footer/logo_white.svg" alt="Logo" width="42px" height="42px"></i>
+                <i class="foot-text1"><a href="../../../view/contact.html">អំពីសត្វព្រៃ</a></i>
+                <i class="foot-text1"><a href="../../../view/contact.html">ទំនាក់ទំនង</a></i>
+            </div>
+            <div class="row2">
+                <div class="foot-line"></div>
+            </div>
+            <div class="row3">
+                <i class="foot-icon1"><div class="wave"></div><img src="../../../src/icon/footer/ic_f.svg" alt="Facebook" width="28px" height="28px"></i>
+                <i class="foot-icon1"><div class="wave"></div><img src="../../../src/icon/footer/ic_gg.svg" alt="Google+" width="28px" height="28px"></i>
+            </div>
+            <div class="row4">
+                <i class="foot-icon2"><img src="../../../src/icon/footer/ic_copy_right.svg" alt="Copy & Right" width="20px" height="20px"></i>
+                <i class="foot-text2"><a>2017. All rights reserved</a></i>
+            </div>
+            <!--<div class="foot-background"><img class="foot-background" src="../src/background/footer-image.jpg" alt=""></div>-->
+
+        </div>
+    </footer>
+</div>
+<!--End Footer-->
+
+<!--Button Go up-->
+<div id="btnScrollUp"style="display:none;position: fixed;bottom: 10px;right: 10px">
+    <button class="btn btn-success" style="border-radius: 50%;padding: 10px 13px;z-index: 11"><i class="fa fa-arrow-up" style="font-size: 20px"></i></button>
+</div>
+<!--End Button GO up-->
+
+<!--Page Loading-->
+<div class="se-pre-con"></div>
+<!--End Page Loading-->
+</body>
+<script>
+    var center,m;
+    function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var myCenter = new google.maps.LatLng(13.390007, 107.014842);
+        var mapOptions = {center: myCenter, zoom: 8};
+        var map = new google.maps.Map(mapCanvas,mapOptions);
+        var marker = new google.maps.Marker({
+            position: myCenter,
+            animation: google.maps.Animation.BOUNCE
+        });
+        marker.setMap(map);
+        center=myCenter;
+        m = map;
+    }
+    $("#mapModal").on("shown.bs.modal", function () {
+        google.maps.event.trigger(m, "resize");
+        m.setCenter(center);
+    });
+    $(function(){
+        $('#loadVideo').click(function(){
+            $('#mapModal').addClass('zoomIn').removeClass('rollOut')
+        })
+        $('.map_close').click(function(){
+            $('#mapModal').removeClass('zoomIn').addClass('rollOut');
+        })
+        $('#mapModal').on('hidden.bs.modal',function(){
+            $(this).removeClass('rollOut');
+            $(this).addClass('zoomIn');
+        })
+    })
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtC6CV5uI2svhQEFh88JPRVfJ3XPuwMIM&callback=myMap"></script>
+
+<script type="text/javascript" src="../../../js/image_gallery.js"></script>
+<script src="../../../js/detail_page.js"></script>
+
+</html>
